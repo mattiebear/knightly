@@ -1,119 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://c6msfqtqf021j"]
+[gd_scene load_steps=22 format=4 uid="uid://c6msfqtqf021j"]
 
 [ext_resource type="Texture2D" uid="uid://bgr6e7ggbu1l0" path="res://Sprites/knight.png" id="1_aun6r"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="2_vsbw7"]
 [ext_resource type="Texture2D" uid="uid://cvfoh7i2pmggr" path="res://Sprites/terrain.png" id="3_btlv0"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q7gnt"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1skev"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(100, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s35a0"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(200, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o2fqu"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(300, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_54tej"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(400, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_prpne"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(500, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nloew"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(0, 100, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pqh4q"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(100, 100, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jthls"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(200, 100, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kenuh"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(300, 100, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5e070"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(400, 100, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ktexk"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(500, 100, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mcmiv"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(600, 100, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_flhcl"]
-atlas = ExtResource("1_aun6r")
-region = Rect2(700, 100, 100, 100)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ph5vj"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q7gnt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1skev")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s35a0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o2fqu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_54tej")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_prpne")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nloew")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pqh4q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jthls")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kenuh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5e070")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ktexk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mcmiv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_flhcl")
-}],
-"loop": true,
-"name": &"Walk",
-"speed": 10.0
-}]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fhqfe"]
 resource_name = "ground"
@@ -252,15 +141,135 @@ texture_region_size = Vector2i(48, 48)
 tile_size = Vector2i(48, 48)
 sources/0 = SubResource("TileSetAtlasSource_fhqfe")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_q7gnt"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1skev"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s35a0"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2fqu"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54tej"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_prpne"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nloew"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(0, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqh4q"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(100, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jthls"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(200, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kenuh"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(300, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5e070"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(400, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktexk"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(500, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mcmiv"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(600, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flhcl"]
+atlas = ExtResource("1_aun6r")
+region = Rect2(700, 100, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ph5vj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q7gnt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1skev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s35a0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o2fqu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54tej")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_prpne")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nloew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqh4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jthls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kenuh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5e070")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktexk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mcmiv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flhcl")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7uuw2"]
+radius = 13.0
+height = 36.0
+
 [node name="Game" type="Node2D"]
 position = Vector2(-1, 0)
 
-[node name="Player" type="Node2D" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAABAAEAAAAEAAoAAAACAAEAAAAEAAkAAAADAAEAAAAEAAkAAAAEAAEAAAAFAAkAAAAEAAAAAAAEAAkAAAAHAAEAAAAEAAkAAAAHAAIAAAAGAAIAAAAGAAIAAAAGAAIAAAAGAAQAAAAEAAoAAAAKAAQAAAAEAAkAAAAMAAMAAAAFAAkAAAAOAAQAAAAEAAoAAAANAAQAAAAEAAkAAAAMAAUAAAAFAAkAAAALAAYAAAAEAAoAAAAKAAYAAAAEAAoAAAALAAUAAAAFAAIAAAALAAQAAAAEAAoAAAANAAMAAAAEAAoAAAAOAAIAAAAEAAkAAAAPAAEAAAAEAAoAAAAQAAEAAAAEAAoAAAARAAAAAAAEAAkAAAARAAEAAAAEAAoAAAARAAIAAAAEAAoAAAARAAMAAAAFAAkAAAAQAAMAAAAFAAkAAAAQAAQAAAAEAAkAAAARAAQAAAAEAAkAAAARAAUAAAAFAAoAAAASAAUAAAAEAAkAAAATAAUAAAAFAAkAAAAUAAUAAAAFAAkAAAAUAAYAAAAEAAoAAAAVAAYAAAAEAAkAAAAVAAcAAAAEAAkAAAAUAAgAAAAFAAkAAAASAAgAAAAFAAoAAAATAAcAAAAEAAoAAAATAAYAAAAEAAoAAAAVAAUAAAAEAAkAAAAWAAYAAAAEAAkAAAAWAAUAAAAEAAkAAAAXAAQAAAAEAAkAAAAWAAQAAAAFAAkAAAAVAAQAAAAFAAkAAAAUAAMAAAAFAAkAAAAMAAoAAAAFAAkAAAALAAoAAAAGAAIAAAAKAAsAAAAFAAoAAAAJAAsAAAAEAAkAAAAIAAoAAAAEAAkAAAAIAAkAAAAEAAkAAAAJAAkAAAAEAAkAAAAKAAgAAAAFAAoAAAALAAgAAAAFAAMAAAALAAkAAAAEAAkAAAAKAAkAAAAFAAMAAAAHAAkAAAAFAAoAAAAGAAoAAAAGAAMAAAAFAAoAAAAGAAMAAAAEAAoAAAAEAAkAAAADAAoAAAAGAAMAAAACAAoAAAAEAAkAAAACAAkAAAAFAAoAAAADAAgAAAAGAAMAAAAEAAgAAAAGAAMAAAAFAAgAAAAGAAMAAAADAAkAAAAFAAoAAAABAAoAAAAEAAkAAAAAAAoAAAAEAAkAAAD//woAAAAEAAkAAAAAAAkAAAAEAAoAAAABAAkAAAAEAAoAAAABAAgAAAAEAAoAAAAEAAkAAAAFAAoAAAAFAAkAAAAFAAoAAAACAAsAAAAEAAkAAAADAAsAAAAGAAMAAAADAAwAAAAEAAoAAAADAA0AAAAEAAoAAAACAA0AAAAEAAoAAAAEAAwAAAAEAAoAAAAFAAwAAAAEAAoAAAAGAAsAAAAEAAoAAAAHAAsAAAAEAAoAAAAHAAwAAAAEAAoAAAAHAA0AAAAEAAoAAAAIAAsAAAAEAAkAAAAIAAwAAAAEAAoAAAAJAAwAAAAEAAoAAAAKAAwAAAAEAAoAAAALAAwAAAAEAAoAAAAMAAwAAAAHAAAAAAANAAwAAAAHAAAAAAANAA0AAAAHAAAAAAAOAAwAAAAFAAkAAAAPAAwAAAAFAAkAAAAQAAwAAAAFAAkAAAARAAwAAAAHAAQAAAASAAwAAAAHAAQAAAAXAAgAAAAHAAEAAAAWAAkAAAAEAAkAAAAVAAkAAAAEAAkAAAAUAAkAAAAEAAkAAAATAAkAAAAEAAkAAAASAAkAAAAEAAkAAAASAAoAAAAEAAkAAAARAAoAAAAEAAkAAAARAAkAAAAEAAkAAAAFAAUAAAAEAAkAAAAEAAUAAAAEAAkAAAADAAUAAAAEAAkAAAADAAQAAAAFAAIAAAAEAAQAAAAEAAkAAAAFAAQAAAAEAAkAAAAEAAYAAAAFAAkAAAAFAAcAAAAFAAkAAAAGAAcAAAAFAAkAAAAGAAgAAAAFAAkAAAAHAAgAAAAFAAoAAAAIAAcAAAAFAAkAAAAJAAcAAAAFAAoAAAAJAAYAAAAEAAoAAAALAAcAAAAFAAMAAAAMAAcAAAAGAAMAAAAMAAYAAAAEAAoAAAANAAYAAAAEAAoAAAANAAUAAAAGAAMAAAAJAP//AAAFAAkAAAAJAAAAAAAFAAkAAAAJAAEAAAAFAAkAAAAIAAEAAAAFAAkAAAAIAAAAAAAFAAkAAAAIAP//AAAFAAkAAAAKAP//AAAFAAkAAAALAP//AAAFAAkAAAALAAAAAAAFAAkAAAALAAEAAAAFAAkAAAALAAIAAAAFAAkAAAAKAAIAAAAFAAkAAAAMAAIAAAAFAAkAAAANAAEAAAAEAAoAAAAOAAEAAAAFAAkAAAAMAAEAAAAEAAoAAAAMAAAAAAAFAAkAAAANAAkAAAAFAAoAAAAOAAgAAAAHAAQAAAAPAAcAAAAFAAoAAAAQAAYAAAAEAAoAAAAQAAUAAAAFAAoAAAAPAAYAAAAEAAoAAAAOAAcAAAAHAAQAAAAOAAYAAAAEAAoAAAANAAcAAAAFAAkAAAAMAAgAAAAFAAoAAAAOAAUAAAAEAAoAAAAPAAUAAAAEAAoAAAAQAAcAAAAFAAoAAAARAAcAAAAFAAkAAAARAAYAAAAEAAoAAAASAAYAAAAFAAkAAAARAAgAAAAFAAoAAAAQAAgAAAAFAAoAAAAPAAgAAAAFAAoAAAAPAAkAAAAFAAoAAAAOAAkAAAAFAAoAAAAOAAoAAAAFAAoAAAAQAAkAAAAFAAoAAAAQAAoAAAAFAAoAAAAPAAoAAAAFAAoAAAANAAsAAAAFAAoAAAAMAAsAAAAFAAoAAAALAAsAAAAFAAoAAAANAAoAAAAFAAkAAAANAAgAAAAHAAQAAAAMAAkAAAAFAAkAAAAAAAgAAAAEAAoAAAD//wgAAAAEAAoAAAAAAAcAAAAEAAoAAAD//wcAAAAEAAoAAAD//wYAAAAEAAoAAAD//wUAAAAEAAoAAAAAAAQAAAAEAAoAAAAAAAMAAAAEAAoAAAAAAAUAAAAEAAoAAAAAAAYAAAAEAAoAAAABAAYAAAAEAAoAAAABAAcAAAAEAAoAAAACAAYAAAAEAAoAAAADAAYAAAAEAAoAAAADAAcAAAAEAAoAAAAEAAcAAAAEAAoAAAACAAgAAAAEAAoAAAACAAcAAAAEAAoAAAABAAUAAAAEAAoAAAABAAQAAAAEAAoAAAABAAMAAAAEAAoAAAABAAIAAAAGAAQAAAAAAAEAAAAEAAoAAAAAAAAAAAAEAAoAAAAAAP//AAAEAAoAAAABAAAAAAAEAAoAAAAGAAUAAAAFAAIAAAAHAAUAAAAEAAoAAAAHAAYAAAAEAAoAAAAIAAQAAAAGAAQAAAAJAAQAAAAEAAoAAAAJAAUAAAAEAAoAAAACAAUAAAAHAAAAAAACAAQAAAAFAAIAAAACAAMAAAAHAAAAAAACAAIAAAAHAAAAAAADAAIAAAAFAAkAAAAEAAIAAAAHAAAAAAAEAAMAAAAHAAAAAAACAAAAAAAFAAIAAAADAAAAAAAFAAIAAAAUAAwAAAAEAAoAAAAVAAwAAAAEAAoAAAAWAAwAAAAEAAoAAAAVAA0AAAAEAAoAAAAUAA0AAAAEAAoAAAATAA0AAAAEAAoAAAAAAAsAAAAEAAoAAAABAAsAAAAEAAoAAAABAAwAAAAEAAoAAAACAAwAAAAEAAoAAAAAAA0AAAAEAAoAAAAAAA4AAAAEAAoAAAD//w4AAAAEAAoAAAD//w0AAAAEAAoAAAAAAAwAAAAEAAoAAAAEAA0AAAAEAAoAAAAFAAsAAAAEAAoAAAAGAAwAAAAEAAoAAAAEAAsAAAAGAAMAAAALAA0AAAAEAAoAAAAKAA0AAAAEAAoAAAAJAA0AAAAEAAoAAAAIAA0AAAAEAAoAAAAGAA0AAAAEAAoAAAAFAA0AAAAEAAoAAAABAA0AAAAEAAoAAAARAA0AAAAHAAQAAAAQAA0AAAAFAAkAAAAQAAsAAAAFAAkAAAARAAsAAAAFAAkAAAASAAsAAAAHAAQAAAAPAAsAAAAFAAkAAAAOAAsAAAAFAAkAAAAIAAgAAAAFAAkAAAAGAAkAAAAGAAMAAAATAAoAAAAFAAIAAAAUAAoAAAAHAAQAAAAVAAoAAAAHAAQAAAAVAAsAAAAFAAIAAAAXAAkAAAAHAAEAAAAXAAoAAAAHAAEAAAAWAAoAAAAHAAEAAAAWAAsAAAAHAAEAAAAXAAsAAAAHAAEAAAAXAAwAAAAHAAEAAAAWAA0AAAAHAAEAAAATAAsAAAAHAAQAAAASAA0AAAAHAAQAAAATAAwAAAAHAAQAAAAUAAsAAAAHAAQAAAAMAA0AAAAHAAAAAAAOAA0AAAAHAAAAAAAPAA0AAAAHAAAAAAAJAAoAAAAGAAIAAAAKAAoAAAAGAAIAAAAFAAIAAAAGAAIAAAAFAAEAAAAFAAkAAAAFAAAAAAAGAAIAAAAGAAAAAAAGAAIAAAAHAAAAAAAGAAIAAAAGAAEAAAAGAAIAAAAGAAYAAAAFAAIAAAAFAAYAAAAFAAIAAAAGAAMAAAAFAAIAAAAFAAMAAAAFAAIAAAAHAAMAAAAFAAIAAAAIAAMAAAAFAAIAAAAAAAIAAAAGAAQAAAADAAMAAAAGAAQAAAAHAAQAAAAGAAQAAAAIAAUAAAAGAAQAAAAIAAYAAAAGAAQAAAALAAMAAAAFAAkAAAAKAAMAAAAFAAkAAAAJAAMAAAAFAAkAAAAJAAIAAAAFAAkAAAAIAAIAAAAFAAkAAAAKAAAAAAAFAAkAAAAKAAEAAAAFAAkAAAAHAAcAAAAFAAoAAAAHAAoAAAAFAAoAAAAKAAcAAAAFAAoAAAAJAAgAAAAFAAoAAAAKAAUAAAAEAAoAAAAWAAgAAAAEAAkAAAAWAAcAAAAEAAkAAAAXAAYAAAAEAAkAAAAXAAUAAAAEAAkAAAAXAAMAAAAEAAkAAAAWAAIAAAAEAAkAAAAVAAIAAAAFAAkAAAAUAAEAAAAEAAkAAAATAAEAAAAFAAkAAAASAAAAAAAEAAkAAAASAP//AAAEAAkAAAATAAAAAAAEAAkAAAAUAAAAAAAEAAkAAAAVAAAAAAAEAAkAAAAWAAAAAAAEAAkAAAAXAAAAAAAEAAkAAAAXAAEAAAAEAAkAAAAXAAIAAAAEAAkAAAAYAAMAAAAEAAkAAAAYAAQAAAAEAAkAAAAWAAEAAAAEAAkAAAAVAAEAAAAEAAkAAAATAAIAAAAFAAkAAAASAAIAAAAEAAkAAAASAAMAAAAFAAkAAAATAAgAAAAFAAkAAAAUAAcAAAAEAAoAAAAMAAQAAAAEAAoAAAANAAAAAAAEAAoAAAAOAAAAAAAEAAoAAAAPAAAAAAAEAAoAAAAPAAQAAAAEAAoAAAAOAAMAAAAEAAoAAAAPAAIAAAAEAAoAAAAQAAIAAAAEAAoAAAAQAAAAAAAEAAoAAAAQAP//AAAEAAoAAAAPAAMAAAAEAAoAAAANAAIAAAAEAAoAAAASAAQAAAAFAAkAAAATAAQAAAAFAAkAAAATAAMAAAAFAAkAAAAVAAMAAAAFAAkAAAAUAAIAAAAFAAkAAAASAAEAAAAFAAkAAAAWAAMAAAAFAAkAAAASAAcAAAAFAAkAAAAVAAgAAAAFAAkAAAAXAA0AAAAFAAkAAAAXAAcAAAAGAAQAAAAUAAQAAAAGAAQAAAA=")
+tile_set = SubResource("TileSet_jr5eq")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(91, 56)
 script = ExtResource("2_vsbw7")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Player"]
 texture_filter = 1
-position = Vector2(135, 139)
+position = Vector2(-1, -2)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_ph5vj")
 animation = &"Idle"
@@ -268,5 +277,6 @@ frame = 3
 frame_progress = 0.833614
 offset = Vector2(0, -6)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_set = SubResource("TileSet_jr5eq")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, -17)
+shape = SubResource("CapsuleShape2D_7uuw2")
