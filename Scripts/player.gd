@@ -7,32 +7,26 @@ var speed: int = 200
 var target = position
 
 @onready var _sprite = $Sprite
+@onready var _navigation_agent = $NavigationAgent2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_state(State.Idle)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	pass
-
-
 func _physics_process(_delta: float) -> void:
 	match state:
 		State.Walk:
-			velocity = position.direction_to(target) * speed
+			velocity = position.direction_to(_navigation_agent.get_next_path_position()) * speed
 			_sprite.flip_h = velocity.x < 0
 			
-			if position.distance_to(target) > 10:
-				move_and_slide()
-			else:
+			if _navigation_agent.is_navigation_finished():
 				set_state(State.Idle)
-
+			else:
+				move_and_slide()
 
 func _input(event):
 	if event.is_action_pressed(&"right_click"):
-		target = get_global_mouse_position()
+		_navigation_agent.target_position = event.global_position
 		set_state(State.Walk)
 
 
